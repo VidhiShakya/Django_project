@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Delights | Premium Dry Fruits</title>
+    <!-- Use Google Fonts for a modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS for the gradient background and hero section -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Added for smooth scrolling */
+        }
+        .savanna-gradient {
+            background: linear-gradient(180deg, #f2e7c4 0%, #e07d40 100%);
+        }
+        .hero-section {
+            /* Updated background image to a more specific desert/arid scene */
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230524/pngtree-sunset-over-an-acacia-tree-and-waterhole-image_2684229.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .product-card {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid #E5E7EB;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="savanna-gradient min-h-screen text-gray-800">
+
+    <!-- Header and Navigation Bar -->
+    <header class="py-6 px-4 md:px-8 lg:px-12 flex justify-between items-center bg-transparent">
+        <a href="#" class="text-xl md:text-2xl font-semibold text-gray-900">DESERT DELIGHTS</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 text-lg font-medium">
+            <a href="#featured-products" class="hover:text-amber-700 transition-colors">BEST SELLERS</a>
+            <a href="#" class="hover:text-amber-700 transition-colors">NUTS</a>
+            <a href="#" class="hover:text-amber-700 transition-colors">DRIED FRUITS</a>
+            <a href="#about-us" class="hover:text-amber-700 transition-colors">ABOUT US</a>
+            <a href="#contact-us" class="hover:text-amber-700 transition-colors">CONTACT</a>
+        </nav>
+
+        <!-- Search and Menu Icons -->
+        <div class="flex items-center space-x-4">
+            <!-- Search Icon (SVG) -->
+            <button aria-label="Search" class="p-2 hover:bg-black/5 rounded-full transition-colors hidden md:block">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-gray-900 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <!-- Hamburger Menu for mobile -->
+            <button aria-label="Open Menu" class="p-2 hover:bg-black/5 rounded-full md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-gray-900 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white py-24 md:py-48 rounded-lg mx-4 md:mx-8 lg:mx-12 my-8 shadow-xl">
+        <div class="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
+        <div class="relative z-10">
+            <h1 class="text-3xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow-lg">NATURE'S FINEST FROM ARID LANDS</h1>
+            <p class="text-base md:text-xl font-medium mb-8 drop-shadow-lg">Discover our premium selection of ethically sourced dry fruits.</p>
+            <button class="bg-amber-800 text-white font-semibold py-3 px-8 rounded-full hover:bg-amber-700 transition-colors shadow-lg">
+                SHOP NOW
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <main class="container mx-auto px-4 py-12" id="featured-products">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900">FEATURED PRODUCTS</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card 1 - Premium Almonds -->
+            <div class="product-card bg-white rounded-lg overflow-hidden border border-gray-200">
+                <img src="https://thumbs.dreamstime.com/b/delicious-almonds-wooden-bowl-rustic-table-ai-generated-333848890.jpg" alt="Premium almonds in a rustic bowl" class="w-full h-auto object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">PREMIUM ALMONDS</h3>
+                    <p class="text-sm text-gray-500">Sourced from the best farms</p>
+                    <p class="text-xl font-bold text-gray-800 mt-2">$12.50</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 - California Pistachios -->
+            <div class="product-card bg-white rounded-lg overflow-hidden border border-gray-200">
+                <img src="https://jornalosertanejo.com.br/wp-content/uploads/2024/12/bowl-full-pistachios-850x560.jpg" alt="California pistachios" class="w-full h-auto object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">CALIFORNIA PISTACHIOS</h3>
+                    <p class="text-sm text-gray-500">Roasted and Salted</p>
+                    <p class="text-xl font-bold text-gray-800 mt-2">$18.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 - Golden Raisins -->
+            <div class="product-card bg-white rounded-lg overflow-hidden border border-gray-200">
+                <img src="https://thumbs.dreamstime.com/b/rustic-raisin-display-black-raisins-burlap-bag-wooden-table-rustic-raisin-display-black-raisins-burlap-bag-wooden-310821611.jpg" alt="Golden raisins" class="w-full h-auto object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">GOLDEN RAISINS</h3>
+                    <p class="text-sm text-gray-500">Naturally Sweet</p>
+                    <p class="text-xl font-bold text-gray-800 mt-2">$9.75</p>
+                </div>
+            </div>
+
+            <!-- Product Card 4 - Cashew Halves -->
+            <div class="product-card bg-white rounded-lg overflow-hidden border border-gray-200">
+                <img src="https://images.stockcake.com/public/0/2/a/02a14f47-8f52-4d58-a9da-67242185cc3f_large/scattered-cashew-nuts-stockcake.jpg" alt="Cashew halves" class="w-full h-auto object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">CASHEW HALVES</h3>
+                    <p class="text-sm text-gray-500">A Nutrient-Rich Snack</p>
+                    <p class="text-xl font-bold text-gray-800 mt-2">$15.25</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Us Section -->
+    <section class="container mx-auto px-4 py-12" id="about-us">
+        <div class="bg-white rounded-lg p-8 md:p-12 shadow-md">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-900">ABOUT US</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Desert Delights was founded on a passion for providing the highest quality dry fruits, sourced directly from arid regions known for their exceptional produce. We believe in the power of natural, wholesome snacks that are not only delicious but also packed with nutrients.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Our commitment to sustainability and ethical sourcing is at the core of everything we do. We work closely with local farmers to ensure fair practices and to bring you products that are as good for the planet as they are for you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="container mx-auto px-4 py-12" id="contact-us">
+        <div class="bg-white rounded-lg p-8 md:p-12 shadow-md">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-900">CONTACT US</h2>
+            <form class="space-y-6 max-w-lg mx-auto">
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-800 text-white font-semibold py-3 rounded-lg hover:bg-amber-700 transition-colors">
+                    SEND MESSAGE
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Footer Links -->
+            <nav class="flex flex-wrap justify-center md:justify-start space-x-6 text-sm font-light mb-6 md:mb-0">
+                <a href="#" class="hover:underline">CUSTOMER SERVICE</a>
+                <a href="#" class="hover:underline">PRIVACY POLICY</a>
+            </nav>
+            
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+                <a href="#" aria-label="Facebook" class="hover:text-amber-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.016 4.398 11.01 10.125 12V14.563H8.344v-2.563H10.125V9.656c0-1.782.916-2.736 2.822-2.736 1.34 0 2.486.239 2.822.345v2.469h-1.455c-.718 0-.859.344-.859.845V12h2.553l-.409 2.563H12.82V24c5.727-.99 10.125-6.01 10.125-12C24 5.373 18.627 0 12 0z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="hover:text-amber-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.58.012 4.85.07c.803.037 1.488.163 2.049.388.583.238 1.054.555 1.512 1.013.458.458.775.929 1.013 1.512.225.561.35 1.246.388 2.049.058 1.27.07 1.646.07 4.85s-.012 3.58-.07 4.85c-.037.803-.163 1.488-.388 2.049-.238.583-.555 1.054-1.013 1.512-.458.458-.929.775-1.512 1.013-.561.225-1.246.35-2.049.388-1.27.058-1.646.07-4.85.07s-3.58-.012-4.85-.07c-.803-.037-1.488-.163-2.049-.388-.583-.238-1.054-.555-1.512-1.013-.458-.458-.775-.929-1.013-1.512-.225-.561-.35-1.246-.388-2.049-.058-1.27-.07-1.646-.07-4.85s.012-3.58.07-4.85c.037-.803.163-1.488.388-2.049.238-.583.555-1.054 1.013-1.512.458-.458.929-.775 1.512-1.013.561-.225 1.246-.35 2.049-.388 1.27-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.071-.853.04-1.554.187-2.101.407-.557.228-1.047.525-1.45.928-.403.403-.7.893-.928 1.45-.22.547-.367 1.248-.407 2.101-.057 1.28-.071 1.688-.071 4.947s.014 3.667.071 4.947c.04.853.187 1.554.407 2.101.228.557.525 1.047.928 1.45.403.403.893.7 1.45.928.547.22 1.248.367 2.101.407 1.28.057 1.688.071 4.947.071s3.667-.014 4.947-.071c.853-.04 1.554-.187 2.101-.407.557-.228 1.047-.525 1.45-.928.403-.403.7-.893.928-1.45.22-.547.367-1.248.407-2.101.057-1.28.071-1.688.071-4.947s-.014-3.667-.071-4.947c-.04-.853-.187-1.554-.407-2.101-.228-.557-.525-1.047-.928-1.45-.403-.403-.893-.7-1.45-.928-.547-.22-1.248-.367-2.101-.407-1.28-.057-1.688-.071-4.947-.071zM12 8.75c1.795 0 3.25 1.455 3.25 3.25s-1.455 3.25-3.25 3.25-3.25-1.455-3.25-3.25 1.455-3.25 3.25-3.25zM12 7c-2.761 0-5 2.239-5 5s2.239 5 5 5 5-2.239 5-5-2.239-5-5-5zm6.829-1.542c-.672 0-1.218.546-1.218 1.218s.546 1.218 1.218 1.218 1.218-.546 1.218-1.218-.546-1.218-1.218-1.218z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="hover:text-amber-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.794-1.574 2.161-2.723-.951.564-2.005.974-3.127 1.195-.898-.957-2.178-1.555-3.594-1.555-3.042 0-5.505 2.464-5.505 5.505 0 .428.049.843.144 1.243-4.57-.23-8.61-2.413-11.32-5.748-.474.817-.749 1.76-.749 2.775 0 1.91.976 3.598 2.461 4.586-.902-.028-1.748-.277-2.493-.683v.069c0 2.66 1.895 4.872 4.409 5.385-.462.126-.957.194-1.464.194-.359 0-.707-.035-1.046-.101.701 2.189 2.72 3.784 5.122 3.827-1.888 1.48-4.27 2.37-6.852 2.37-.446 0-.888-.027-1.323-.078 2.445 1.568 5.343 2.484 8.448 2.484 10.136 0 15.65-8.412 15.65-15.757 0-.239-.006-.479-.015-.718.995-.724 1.867-1.63 2.55-2.657z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

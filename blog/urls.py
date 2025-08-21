@@ -1,3 +1,4 @@
+
 """
 URL configuration for myfirstwebproject project.
 
@@ -14,20 +15,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
+# from django.contrib import admin
+# from django.urls import path
 
-from .views import index,home
-from django.http import HttpResponse
+# from .views import index,home
+# from django.http import HttpResponse
+
+from django.urls import path
+from .views import blog_index, get_posts, create_posts
 
 urlpatterns = [
-    path('blog/', include('blog.urls')),  
-    # http://127.0.0.1:8000/blog
-    path('', home),   
-    # http://127.0.0.1:8000/
-    path('admin/', admin.site.urls),
-    # http://127.0.0.1:8000/admin
-    path('hello/', index),
-    # http://127.0.0.1:8000/hello
+    path('', blog_index),
+    path('posts/',get_posts),
+    path('posts/new',create_posts),
+      
+    
 ]
 
